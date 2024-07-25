@@ -1,0 +1,59 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  margin-bottom: 90px;
+  margin-left: 40px;
+  margin-right: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade esta línea */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.column {
+  flex: 20;
+}
+.columnpc1{
+  flex: 20;
+  padding-left: 25px;
+}
+
+.columnv {
+  flex: 1;
+  text-align: center;
+}
+
+.teamContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  font-size: 16px;
+}
+
+.league {
+  font-size: 14px;
+  color: var(--second-text-color);
+}
+
+.vs {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 40px;
+  color: var(--resaltado-color);
+}
+
+.logo {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  margin-top: 5px;
+}

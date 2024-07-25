@@ -1,0 +1,60 @@
+  
+  .predictions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .heading {
+    color: var(--text-color); /* Usar el color primario definido en las variables globales */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .mainContent {
+    padding-top: 110px; /* Ajusta este valor según la altura de tu header */
+  }
+  .section {
+    margin: 40px 0;
+    
+  }
+  
+  .sectionTitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+    padding-bottom: 0px;
+  }
+  .sectionHeader {
+    display: ruby-text;
+    align-items: center;
+  }
+  
+  .sectionTitle {
+    flex-grow: 1;
+  }
+  
+  .infoIcon {
+    margin-left: 8px;
+    padding-left: 10px;
+    cursor: pointer;
+    position: relative;
+    color: var(--third-color);
+    font-size: large;
+  }
+  
+  .infoModal {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary-color);
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    white-space: nowrap;
+    color: var(--background-color);
+    font-size: 13px;
+  }
+  
