@@ -1,5 +1,3 @@
-"use client"; // Asegúrate de que esta línea esté al principio del archivo
-
 import React, { useState, useEffect } from 'react';
 import styles from '../styles/MatchdayPrediction.module.css';
 
