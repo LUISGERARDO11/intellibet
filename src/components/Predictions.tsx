@@ -15,8 +15,8 @@ const Predictions: React.FC = () => {
     const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 segundos de timeout
 
     try {
-      //const response = await fetch('https://predictfutbol-api.onrender.com/api/predict/', {
-      const response = await fetch('http://127.0.0.1:8000/api/predict/', {
+      const response = await fetch('https://predictfutbol-api.onrender.com/api/predict/', {
+      //const response = await fetch('http://127.0.0.1:8000/api/predict/', {
         signal: controller.signal,
       });
 
