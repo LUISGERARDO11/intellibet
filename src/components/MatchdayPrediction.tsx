@@ -23,7 +23,7 @@ const MatchdayPrediction: React.FC = () => {
   const [awayTeamLogo, setAwayTeamLogo] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchWithTimeout = async (url: string, options: RequestInit, timeout: number = 10000, retries: number = 2) => {
+  const fetchWithTimeout = async (url: string, options: RequestInit, timeout: number = 10000, retries: number = 2): Promise<any> => {
     const controller = new AbortController();
     const id = setTimeout(() => controller.abort(), timeout);
     options.signal = controller.signal;
@@ -51,7 +51,6 @@ const MatchdayPrediction: React.FC = () => {
       setError(null);
       try {
         const data = await fetchWithTimeout('https://predictfutbol-api.onrender.com/api/matches_scheduled/', {}, 10000, 2);
-        //const data = await fetchWithTimeout('http://127.0.0.1:8000/api/matches_scheduled/', {}, 10000, 2);
         setMatchdays(data);
       } catch (error) {
         if (error instanceof Error) {
@@ -98,7 +97,6 @@ const MatchdayPrediction: React.FC = () => {
       setError(null);
       try {
         const data = await fetchWithTimeout('https://predictfutbol-api.onrender.com/api/predictwithouttd/', {
-        //const data = await fetchWithTimeout('http://127.0.0.1:8000/api/predictwithouttd/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -206,7 +204,8 @@ const MatchdayPrediction: React.FC = () => {
                 {awayTeamLogo ? (
                     <img src={awayTeamLogo} alt="Away Team Logo" className={styles.image} />
                 ) : (
-                    <div className={styles.image}>VISITANTE</div>
+                    <div className={styles.image}>VISITANTE
+                    </div>
                 )}
                 </div>
             </div>
