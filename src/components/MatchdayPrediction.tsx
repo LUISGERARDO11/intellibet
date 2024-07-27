@@ -174,7 +174,7 @@ const MatchdayPrediction: React.FC = () => {
             className={styles.predictButton} 
             onClick={handlePredictClick}
           >
-            Predecir
+            PREDECIR
           </button>
           {error && <p className={styles.error}>{error}</p>}
           <div className={styles.container}>

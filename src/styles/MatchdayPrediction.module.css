@@ -28,13 +28,13 @@
   flex-direction: column;
   align-items: center;
 }
+
 .selectGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
 
 .label {
   margin-bottom: 10px;
@@ -43,7 +43,7 @@
 }
 
 .selector {
-  width: 400px;
+  width: 90%; /* Ajusta el tamaño del select */
   padding: 10px;
   font-size: 16px;
 }
@@ -56,11 +56,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
-}
+ }
 
 .predictButton:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .predictionContainer {
@@ -82,33 +82,108 @@
 }
 
 .prediction {
-    font-size: 21px;
-    text-align: center;
-  
+  font-size: 21px;
+  text-align: center;
 }
-.boldText{
-    font-weight: bold;
+
+.boldText {
+  font-weight: bold;
 }
+
 .image {
-    width: 150px;
-    height: 150px;
-    border: 2px solid black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.teamLabel {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
     align-items: center;
   }
 
-  .imageWrapper {
-    display: flex;
+  .footer {
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: 20px 0;
   }
-  .teamLabel {
-    text-align: center;
-    font-weight: bold;
+
+  .selector {
+    width: 200%; /* Ajusta el tamaño del select */
     margin-bottom: 10px;
-    padding-left: 15px;
   }
+
+  .predictButton {
+    width: 90%; /* Ajusta el tamaño del botón */
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 20px 10px 80px;
+    padding: 15px;
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .boldText {
+    font-size: 18px;
+  }
+
+  .selector {
+    width: 200%; /* Ajusta el tamaño del select */
+  }
+
+  .predictButton {
+    width: 100%; /* Ajusta el tamaño del botón */
+    padding: 10px;
+  }
+
+  .footer {
+    flex-direction: column;
+    margin: 10px 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teamLabel,
+  .imageWrapper,
+  .prediction,
+  .predictButton {
+    margin-bottom: 10px;
+  }
+
+  .imageWrapper,
+  .prediction,
+  .predictButton,
+  .selector {
+    width: 100%;
+    text-align: center;
+  }
+}
