@@ -86,3 +86,128 @@
     margin-bottom: 20px;
     padding-bottom: 10px;
   }
+
+  /* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 15px;
+  }
+
+  .title {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .subtitle {
+      font-size: 14px;
+      text-align: center;
+  }
+
+  .uploadButton {
+      width: 100%;
+      font-size: 14px;
+      text-align: center;
+      padding: 10px ;
+  }
+
+  .fileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #dbdbdb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+    box-sizing: border-box;
+  }
+  
+  .fileIcon {
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+  }
+  
+  .fileName {
+    flex-grow: 1; /* Toma todo el espacio disponible para empujar el botón hacia la derecha */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .deleteButton {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px; /* Asegura que haya espacio entre el nombre del archivo y el botón */
+  }
+  .refreshButton{
+    font-size: 12px;
+    text-align: center;
+    padding: 10px ;
+  }
+  
+}
+
+@media (max-width: 480px) {
+  .card {
+      margin-left: 10px;
+      margin-right: 10px;
+      padding: 10px;
+  }
+
+  .title {
+      font-size: 18px;
+  }
+
+  .subtitle {
+      font-size: 12px;
+  }
+
+  .uploadButton {
+      width: 100%;
+      font-size: 12px;
+      padding: 8px;
+  }
+
+  .fileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #dbdbdb;
+    padding: 10px 15px;
+    border-radius: 5px;
+    flex-wrap: nowrap; /* Asegura que los elementos no se envuelvan */
+    box-sizing: border-box;
+  }
+  
+  .fileIcon {
+    width: 37px;
+    height: 37px;
+    margin-right: 10px;
+  }
+  
+  .fileName {
+    flex-grow: 1; /* Toma todo el espacio disponible para empujar el botón hacia la derecha */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .deleteButton {
+    background-color: transparent;
+    color: red;
+    border: 1px solid red;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 15px; /* Asegura que haya espacio entre el nombre del archivo y el botón */
+  }
+  
+}
