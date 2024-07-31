@@ -1,43 +1,70 @@
-.containerch{
+/* ColumnHeaders.module.css */
+.containerch {
   padding-top: 13px;
 }
 
 .columnHeaders {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 40px 20px;
-    background-color: var(--background-color);
-  }
-  
-  
-  .columnh {
-    flex: 1;
-    font-weight: bold;
-    color: var(--text-color);
-    font-size: 18px;
-    margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 20px;
+  background-color: var(--background-color);
+}
+
+.columnh,
+.columnh2,
+.columnh3 {
+  flex: 1;
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 18px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.columnh2 {
+  margin-left: 75px;
+}
+
+.columnh3 {
+  padding-right: 80px;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: var(--third-color);
+  font-size: 20px;
+  padding-left: 45px;
+}
+
+@media (max-width: 768px) {
+  .columnHeaders {
+    padding: 0 20px 20px;
   }
 
-  .columnh2 {
-    flex: 1;
-    font-weight: bold;
-    color: var(--text-color);
-    font-size: 18px;
-    margin-left: 75px;
-    text-align: center;
-  }
-
+  .columnh,
+  .columnh2,
   .columnh3 {
-    flex: 1;
-    font-weight: bold;
-    color: var(--text-color);
+    font-size: 16px;
+    margin: 5px 10px; /* Menor margen horizontal en pantallas más pequeñas */
+  }
+
+  .subtitle {
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 10px;
     font-size: 18px;
-    padding-right: 80px;
-    text-align:center;
   }
-  .subtitle{
-    font-weight: bold;
-    color: var(--third-color);
-    font-size: 20px;
-    padding-left: 45px;
+}
+
+@media (max-width: 480px) {
+  .columnh,
+  .columnh2,
+  .columnh3 {
+    font-size: 14px;
+    margin: 5px; /* Aún menor margen horizontal en pantallas muy pequeñas */
   }
+
+  .subtitle {
+    font-size: 16px;
+  }
+}

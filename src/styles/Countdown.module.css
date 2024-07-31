@@ -1,47 +1,93 @@
 /* Countdown.module.css */
 .countdownContainer {
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
-    background-color: #28a745; /* Ajusta el color según sea necesario */
-    border-radius: 5px;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #28a745;
+  border-radius: 5px;
+  padding: 8px;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.countdownText {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  margin-right: 20px;
+}
+
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+.timeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.time {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.label {
+  font-size: 16px;
+  color: white;
+}
+
+.separator {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--secondary-color);
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
   .countdownText {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-bottom: 10px; /* Añade un margen inferior para separar el texto del contador */
+    margin-right: 0; /* Elimina el margen derecho */
+    text-align: center; /* Centra el texto */
   }
-  
-  .countdown {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .timeSection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-  }
-  
+
   .time {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
+    font-size: 20px;
   }
-  
+
   .label {
-    font-size: 16px;
-    color: white;
+    font-size: 14px;
   }
+
   .separator {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--secondary-color);
-    margin: 0 10px;
+    font-size: 20px;
+    margin: 0 5px; /* Reduce el margen en pantallas más pequeñas */
   }
+}
+
+@media (max-width: 480px) {
+  .countdownText {
+    font-size: 18px;
+  }
+
+  .time {
+    font-size: 18px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .separator {
+    font-size: 18px;
+  }
+
+  .timeSection {
+    margin: 5px 0; /* Reduce el margen en pantallas más pequeñas */
+  }
+}
