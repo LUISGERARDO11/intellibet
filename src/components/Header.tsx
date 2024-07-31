@@ -30,7 +30,7 @@ const Header: React.FC = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <div className={styles.columnhe1}>
-          <img src="/favicon.png" alt="Logo" className={styles.logo} />
+          <img src="/favicon.webp" alt="Logo" className={styles.logo} />
         </div>
         <div className={styles.columnhe2}>
           <span className={styles.title}>INTELLIBET</span>

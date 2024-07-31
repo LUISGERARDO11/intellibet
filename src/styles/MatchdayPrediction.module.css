@@ -136,7 +136,7 @@
     margin-bottom: 10px;
   }
   .selectorjornada{
-    width: 310%;
+    width: 300%;
   }
 
   .predictButton {
@@ -165,7 +165,7 @@
     width: 200%; /* Ajusta el tamaño del select */
   }
   .selectorjornada{
-    width: 310%;
+    width: 300%;
   }
   .predictButton {
     width: 100%; /* Ajusta el tamaño del botón */
