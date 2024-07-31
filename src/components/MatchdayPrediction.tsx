@@ -140,7 +140,7 @@ const MatchdayPrediction: React.FC = () => {
             <div className={styles.column}>
               <label className={styles.label} htmlFor="matchday">Jornada</label>
               <select 
-                className={styles.selector} 
+                className={styles.selectorjornada} 
                 value={selectedMatchday ?? ''} 
                 onChange={handleMatchdayChange}
               >
