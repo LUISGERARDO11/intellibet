@@ -6,7 +6,8 @@
   margin-bottom: 90px;
   margin-left: 40px;
   margin-right: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade esta línea */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .row {
@@ -61,44 +62,56 @@
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
+    align-items: center;
   }
-  .column {
-    width: 100%;
-  }
-  .teamContainer {
-    align-items: flex-start;
-    text-align: left;
-  }
+  
   .columnpc1,
   .columnv,
   .column {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .teamContainer {
+    align-items: center;
+    text-align: center;
+  }
+
+  .card {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 15px;
+  }
+  
+  /* Ocultar ColumnHeaders en pantallas pequeñas */
+  .columnHeaders {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
   }
+
   .row {
     flex-direction: column;
+    align-items: center;
   }
-  .column {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .teamContainer {
-    align-items: flex-start;
-    text-align: left;
-  }
+
   .columnpc1,
   .columnv,
   .column {
-    padding-left: 0;
-    padding-right: 0;
-    margin-bottom: 20px;
+    padding: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .teamContainer {
+    align-items: center;
+    text-align: center;
   }
 }

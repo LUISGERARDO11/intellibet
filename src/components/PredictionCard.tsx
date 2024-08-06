@@ -42,7 +42,9 @@ const PredictionCard: React.FC<{ predictionData: Prediction | null }> = ({ predi
 
   return (
     <div className={styles.card}>
-      <ColumnHeaders/>
+       <div className={styles.columnHeaders}>
+        <ColumnHeaders />
+      </div>
       <div className={styles.row}>
         <div className={styles.columnpc1}>
           <p className={styles.date}><strong>{date}</strong>. {time}</p>

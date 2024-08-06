@@ -12,7 +12,7 @@ const LandingPage: React.FC = () => {
 
       </div>
       <div className={styles.termsContainer}>
-        <p className={styles.terms}>Las apuestas gratis se pagan como bonos de apuesta. Las ganancias no incluyen el importe de los bonos de apuesta. Se aplican condiciones, límites de tiempo y exclusiones. El depósito mínimo para las fichas doradas es $1,000. Se aplican premios máximos, restricciones de juego, límites de tiempo y condiciones.</p>
+        <p className={styles.terms}>El uso de este sistema de predicción es responsabilidad de cada usuario</p>
         <p className={styles.terms}> <Link href="/terms" className={styles.link}>Consulte las condiciones importantes y las condiciones completas</Link></p>
       </div>
     </div>
